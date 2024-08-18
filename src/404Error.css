@@ -1,0 +1,110 @@
+/* src/404Error.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #fff; /* Set background color to white for the entire page */
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center;    /* Center child elements horizontally */
+    justify-content: center; /* Center child elements vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #fff; /* Background color of the container */
+    text-align: center;
+}
+
+.error-code {
+    position: relative;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #dc3545;
+    margin-top: initial;
+    margin-left: 15rem;
+}
+
+.error-code span {
+    position: absolute;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #dc3545;
+    text-shadow: 
+        -2px -2px 0 #fff,  
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+}
+
+.error-code .first {
+    left: 0; /* Adjust as needed for correct positioning */
+    z-index: 1;
+}
+
+.error-code .second {
+    left: 5.5rem; /* Adjust to overlap with the first "4" */
+    z-index: 2;
+    padding-top: 0.5rem;
+}
+
+.error-code .third {
+    left: 10.5rem; /* Adjust to overlap with the "0" */
+    z-index: 3;
+}
+
+.error-code .error {
+    left: 15rem;
+    z-index: 1;
+    font-size: 2.5rem;
+    padding-left: 1.4rem;
+    padding-top: 3.6rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.error-title {
+    color: #333;
+    margin-top: 1rem;
+    margin-left: 16rem;
+}
+
+.error-title .ohno{
+    left: 15rem;
+    z-index: 1;
+    font-size: 7rem;
+    padding-left: 1.4rem;
+    padding-top: 3.6rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.error-title .error-subtitle {
+    font-weight:bold;
+    color: #dc3545;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 2.5rem;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 10px 0;
+    margin-left: 30rem;
+}
+
+.error-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    cursor: pointer;
+
+    margin-left: 30rem;
+}
+
+.error-button:hover {
+    background-color: #c82333;
+}
